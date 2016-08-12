@@ -12,7 +12,7 @@
 
 5. git rm -r --cached folder:删除版本库中多余的内容
 
-6. git reset head number:回退指定版本
+6. git reset --hard number:回退指定版本
 
 ## 目录结构：
 1. public：静态文件
