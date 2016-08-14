@@ -30,6 +30,7 @@ module.exports = {
       {test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=image/svg+xml'}
     ]
   },
+  devtool: "#cheap-source-map",
   plugins: [
     new ExtractTextPlugin("[name].css"),
     new webpack.optimize.CommonsChunkPlugin("vendor", "vendor.bundle.js")

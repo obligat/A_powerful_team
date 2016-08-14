@@ -15,7 +15,7 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
-
+.REAMDE-CONFLICT.MD.swp
 # Windows shortcuts
 *.lnk
 ### OSX template

@@ -1,5 +1,15 @@
 # iPet
 
+#### twa-camp-2016集体项目
+##### 成员
+> 祁燕子 qiyanzi (team leader)
+张颖嘉 (BA)
+胡雄超 
+马宇辰
+张一儒
+魏航 
+赵琪琪 ritter
+
 ## github多人协作冲突及相关命令
 
 1. git log --oneline：在一行显示日志
@@ -24,8 +34,8 @@
 2. npm install 安装依赖
 3. commit的格式：
 > git commit -m 'name - description'
-name: 自己github的名字，或自己的名字
-description：自己提交的描述，要具体，小步提交
+  name: 自己github的名字，或自己的名字
+  description：自己提交的描述，要具体，小步提交
 
 ## npm run eslint
 4. 最小圈复杂度3

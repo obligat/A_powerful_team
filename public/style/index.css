@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.head {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.mainer {
+    /*width: 980px;*/
+    /*width: 1170px;*/
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+.doctorList {
+    width: 70%;
+}
+.scrol {
+    height: 620px;
+    overflow: auto;
+}
+.thumbnail {
+    margin-bottom: 8px;
+    padding:2px;
+}
+.doctor {
+    margin-bottom: 30px;
+    margin-right: 27px;
+}
