@@ -16,7 +16,7 @@ app.use(express.static('public'));
 regRouters(app);
 
 app.listen(3000, function() {
-  console.log('server started at http://localhost:3000'); // eslint-disable-line no-console
+  console.log('server started at http://localhost:3000');
 });
 
 export default app;

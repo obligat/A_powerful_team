@@ -13,7 +13,6 @@ const doctorRequestMiddleware = store=> next=> action=> {
         });
     break;
   }
-
   next(action);
 };
 
