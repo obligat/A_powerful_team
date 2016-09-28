@@ -1,14 +1,21 @@
-# iPet
 
-#### twa-camp-2016集体项目
+
+#### 软件杯-2016集体项目
 ##### 成员
-> 祁燕子 qiyanzi (team leader)
-张颖嘉 (BA)
-胡雄超 
-马宇辰
-张一儒
-魏航 
-赵琪琪 ritter
+>马宇辰
+王华
+王晨冬
+杜金桥
+
+
+## 使用方法
+1，npm install 安装依赖
+2，sudo mongod 启动数据库
+3，npm run refreshMongo 刷新数据库
+4，npm run wpw
+5，npm start
+6，打开localhost：3000
+
 
 ## github多人协作冲突及相关命令
 
