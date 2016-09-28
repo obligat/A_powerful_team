@@ -9,11 +9,17 @@
 
 
 ## 使用方法
+
 1，npm install 安装依赖
+
 2，sudo mongod 启动数据库
+
 3，npm run refreshMongo 刷新数据库
+
 4，npm run wpw
+
 5，npm start
+
 6，打开localhost：3000
 
 
