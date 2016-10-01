@@ -1,8 +1,8 @@
 import {combineReducers} from 'redux';
-import doctors from './doctors';
+import activities from './activities';
 
 const resultList = combineReducers({
-  doctors
+  activities
 });
 
 export default resultList;

@@ -1,13 +1,13 @@
 import request from 'superagent';
 
-const doctorRequestMiddleware = store=> next=> action=> {
+const activitiesRequestMiddleware = store=> next=> action=> {
 
   switch (action.type) {
   case 'INIT':
-    request.get('/doctors')
+    request.get('/activities')
         .end((err, res)=> {
           next({
-            type: 'DOCTORS_LOADED',
+            type: 'ACTIVITY_LOADED',
             data: res.body
           });
         });
@@ -16,4 +16,4 @@ const doctorRequestMiddleware = store=> next=> action=> {
   next(action);
 };
 
-export default doctorRequestMiddleware;
+export default activitiesRequestMiddleware;

@@ -1,16 +1,19 @@
+/**
+ * Created by myc on 10/1/16.
+ */
 import express from 'express';
-import Doctor from '../models/Doctor';
+import Activity from '../models/Activity';
 
 let router = express.Router();
 
 router.get('/', (req, res)=> {
-  Doctor.find((err, data)=> {
+  Activity.find((err, data)=> {
     res.send(data);
   });
 });
 
 router.get('/:id', (req, res)=> {
-  Doctor.findOne({
+  Activity.findOne({
     id: req.params.id
   }, (err, data)=> {
     res.send(data);
@@ -18,7 +21,7 @@ router.get('/:id', (req, res)=> {
 });
 
 router.put('/:id', (req, res)=> {
-  Doctor.update({
+  Activity.update({
     id: req.params.id
   }, req.body, (err, data)=> {
     res.send({
@@ -29,8 +32,8 @@ router.put('/:id', (req, res)=> {
 });
 
 router.post('/', (req, res, next)=> {
-  new Doctor({
-    name: req.body.name
+  new Activity({
+    activityName: req.body.activityName
   }).save((err, todo) => {
     if(err) {
       return next(err);
@@ -41,7 +44,7 @@ router.post('/', (req, res, next)=> {
 });
 
 router.delete('/:id', (req, res)=> {
-  Doctor.findByIdAndRemove(req.params.id, (err)=> {
+  Activity.findByIdAndRemove(req.params.id, (err)=> {
     res.send({
       error: err
     });

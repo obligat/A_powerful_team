@@ -1,21 +1,23 @@
 import mongoose from 'mongoose';
 import rawData from './fixture/raw-data';
+import activityRawData from './fixture/activityRawData';
 import Doctor from '../models/Doctor';
+import Activity from '../models/Activity';
 
 const modelsMap = {
-  Doctor
+  Activity
 };
 
-let docs = Object.keys(rawData);
+let acti = Object.keys(activityRawData);
 
-mongoose.connect('mongodb://localhost/doctors');
+mongoose.connect('mongodb://localhost/activity');
 
-Object.keys(rawData).forEach(v => {
+Object.keys(activityRawData).forEach(v => {
   modelsMap[v].remove(()=> {
-    modelsMap[v].create(rawData[v], ()=> {
-      docs = docs.filter(doc => doc !== v);
+    modelsMap[v].create(activityRawData[v], ()=> {
+      acti = acti.filter(doc => doc !== v);
      // console.log(`The data of ${v} created`);
-      if(docs.length === 0) {
+      if(acti.length === 0) {
        // console.log(`All data refreshed`);
         process.exit(0);
       }

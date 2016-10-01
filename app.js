@@ -5,7 +5,7 @@ import regRouters from './server/routers';
 
 const app = express();
 
-mongoose.connect('mongodb://localhost/doctors');
+mongoose.connect('mongodb://localhost/activity');
 
 app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
   extended: true

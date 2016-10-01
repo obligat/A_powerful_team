@@ -1,14 +1,14 @@
 import React from 'react'; // eslint-disable-line no-unused-vars
 import {render} from 'react-dom';
 import App from './components/App';
-import doctorList from './reducers';
+import activityList from './reducers';
 import {createStore, applyMiddleware} from 'redux';
 import {Provider} from 'react-redux';
-import doctorRequestMiddleware from './middlewares/doctorsRequestMiddleware';
+import activitiesRequestMiddleware from './middlewares/activitiesRequestMiddleware';
 
 const store = createStore(
-    doctorList,
-    applyMiddleware(doctorRequestMiddleware)
+    activityList,
+    applyMiddleware(activitiesRequestMiddleware)
 );
 
 store.dispatch({

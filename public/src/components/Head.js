@@ -1,6 +1,3 @@
-/**
- * Created by ritter on 16-8-14.
- */
 import React, {Component} from 'react';// eslint-disable-line no-unused-vars
 
 class Head extends Component {
@@ -11,7 +8,6 @@ class Head extends Component {
             <div className="thumbnail">
               <img src="images/logo.jpg" alt="iPet logo"></img>
             </div>
-
           </div>
           <div>person return exit</div>
         </div>
