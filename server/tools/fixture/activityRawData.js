@@ -2,9 +2,8 @@
  * Created by myc on 10/1/16.
  */
 export default {
-  Activity:[
+  Activity: [
     {
-      id: '1',
       activityName: 'party',
       activityTime: 'today',
       activityLocation: 'my school',
@@ -12,11 +11,9 @@ export default {
       comment: {
         clubName: 'kongfu',
         message: 'hi there'
-      },
-      maxParty: '20'
+      }
     },
     {
-      id: '2',
       activityName: 'party',
       activityTime: 'today',
       activityLocation: 'my school',
@@ -24,11 +21,9 @@ export default {
       comment: {
         clubName: 'kongfu',
         message: 'hi there'
-      },
-      maxParty: '20'
+      }
     },
     {
-      id: '3',
       activityName: 'party',
       activityTime: 'today',
       activityLocation: 'my school',
@@ -36,11 +31,9 @@ export default {
       comment: {
         clubName: 'kongfu',
         message: 'hi there'
-      },
-      maxParty: '20'
+      }
     },
     {
-      id: '4',
       activityName: 'party',
       activityTime: 'today',
       activityLocation: 'my school',
@@ -48,11 +41,9 @@ export default {
       comment: {
         clubName: 'kongfu',
         message: 'hi there'
-      },
-      maxParty: '20'
+      }
     },
     {
-      id: '5',
       activityName: 'party',
       activityTime: 'today',
       activityLocation: 'my school',
@@ -60,11 +51,9 @@ export default {
       comment: {
         clubName: 'kongfu',
         message: 'hi there'
-      },
-      maxParty: '20'
+      }
     },
     {
-      id: '6',
       activityName: 'party',
       activityTime: 'today',
       activityLocation: 'my school',
@@ -72,11 +61,9 @@ export default {
       comment: {
         clubName: 'kongfu',
         message: 'hi there'
-      },
-      maxParty: '20'
+      }
     },
     {
-      id: '7',
       activityName: 'party',
       activityTime: 'today',
       activityLocation: 'my school',
@@ -84,11 +71,9 @@ export default {
       comment: {
         clubName: 'kongfu',
         message: 'hi there'
-      },
-      maxParty: '20'
+      }
     },
     {
-      id: '8',
       activityName: 'party',
       activityTime: 'today',
       activityLocation: 'my school',
@@ -96,8 +81,69 @@ export default {
       comment: {
         clubName: 'kongfu',
         message: 'hi there'
-      },
-      maxParty: '20'
+      }
+    }
+  ],
+  Community: [
+    {
+      userName: 'myc123',
+      passWord: '123456',
+      schoolName: 'xupt',
+      communityName: 'stuUnit',
+      logo: '',
+      description: 'the best school of china',
+      email: '12345678911',
+      tel: '15829363000'
+    },
+    {
+      userName: 'myc123',
+      passWord: '123456',
+      schoolName: 'xupt',
+      communityName: 'stuUnit',
+      logo: '',
+      description: 'the best school of china',
+      email: '12345678911',
+      tel: '15829363000'
+    },
+    {
+      userName: 'myc123',
+      passWord: '123456',
+      schoolName: 'xupt',
+      communityName: 'stuUnit',
+      logo: '',
+      description: 'the best school of china',
+      email: '12345678911',
+      tel: '15829363000'
+    },
+    {
+      userName: 'myc123',
+      passWord: '123456',
+      schoolName: 'xupt',
+      communityName: 'stuUnit',
+      logo: '',
+      description: 'the best school of china',
+      email: '12345678911',
+      tel: '15829363000'
+    },
+    {
+      userName: 'myc123',
+      passWord: '123456',
+      schoolName: 'xupt',
+      communityName: 'stuUnit',
+      logo: '',
+      description: 'the best school of china',
+      email: '12345678911',
+      tel: '15829363000'
+    },
+    {
+      userName: 'myc123',
+      passWord: '123456',
+      schoolName: 'xupt',
+      communityName: 'stuUnit',
+      logo: '',
+      description: 'the best school of china',
+      email: '12345678911',
+      tel: '15829363000'
     }
   ]
 };

@@ -4,7 +4,7 @@ const activitiesRequestMiddleware = store=> next=> action=> {
 
   switch (action.type) {
   case 'INIT':
-    request.get('/activities')
+    request.get('/activity')
         .end((err, res)=> {
           next({
             type: 'ACTIVITY_LOADED',

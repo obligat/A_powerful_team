@@ -1,28 +1,34 @@
 /**
  * Created by myc on 10/1/16.
  */
-import express from 'express';
-import Activity from '../models/Activity';
+import express from "express";
+import Activity from "../models/Activity";
 
 let router = express.Router();
 
 router.get('/', (req, res)=> {
   Activity.find((err, data)=> {
+    if(err){
+      res.send(err);
+    }
     res.send(data);
   });
 });
 
-router.get('/:id', (req, res)=> {
+router.get('/:_id', (req, res)=> {
   Activity.findOne({
-    id: req.params.id
+    _id: req.params._id
   }, (err, data)=> {
+    if(err){
+      res.send(err);
+    }
     res.send(data);
   });
 });
 
-router.put('/:id', (req, res)=> {
+router.put('/:_id', (req, res)=> {
   Activity.update({
-    id: req.params.id
+    _id: req.params._id
   }, req.body, (err, data)=> {
     res.send({
       error: err,
@@ -43,12 +49,6 @@ router.post('/', (req, res, next)=> {
   });
 });
 
-router.delete('/:id', (req, res)=> {
-  Activity.findByIdAndRemove(req.params.id, (err)=> {
-    res.send({
-      error: err
-    });
-  });
-});
+
 
 module.exports = router;

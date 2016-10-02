@@ -1,11 +1,11 @@
 import mongoose from 'mongoose';
-import rawData from './fixture/raw-data';
 import activityRawData from './fixture/activityRawData';
-import Doctor from '../models/Doctor';
 import Activity from '../models/Activity';
+import Community from '../models/Community';
 
 const modelsMap = {
-  Activity
+  Activity,
+  Community
 };
 
 let acti = Object.keys(activityRawData);
