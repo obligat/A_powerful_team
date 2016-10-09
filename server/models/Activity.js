@@ -9,10 +9,10 @@ const Activity = mongoose.model('Activity', {
   activityTime: String,
   activityLocation: String,
   instruction: String,
-  comment: {
+  comment: [{
     clubName: String,
     message: String
-  },
+  }],
   maxParty: String
 });
 
