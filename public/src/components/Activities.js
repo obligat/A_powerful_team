@@ -8,7 +8,7 @@ class Activities extends Component {
         <div className="row scrol">
           {
             activity.map((v, k)=> (
-                <ActivityItem key={k+1} activityName={v.name} activityTime={v.activityTime} activityLocation={v.activityLocation} instruction={v.instruction} />
+                <ActivityItem key={k} id={v._id} activityName={v.activityName} activityTime={v.activityTime} activityLocation={v.activityLocation} instruction={v.instruction} />
             ))
           }
         </div>

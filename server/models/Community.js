@@ -4,8 +4,8 @@
 import mongoose from "mongoose";
 
 const Community = mongoose.model('Community', {
-  userName:String,
-  passWord:String,
+  username:String,
+  password:String,
   schoolName:String,
   communityName:String,
   logo:String,

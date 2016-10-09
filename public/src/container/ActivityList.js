@@ -1,5 +1,6 @@
-import { connect } from 'react-redux';
+import {connect} from 'react-redux';
 import Activities from '../components/Activities';
+
 
 const mapStateToProps = (state)=> (state);
 
