@@ -1,14 +1,14 @@
 
 
-#### 软件杯-2016集体项目
+#### 软件杯-2016集体项目(该项目在ubuntu16.04LTS下开发)
 ## 成员
 >
 
 马宇辰(myc1995)
 
-王华
+王华(SnowHua)
 
-李晨冬
+李晨冬(lcdqqq)
 
 杜金桥(obligat)
 
@@ -51,7 +51,7 @@
 1. clone该仓库
 2. npm install 安装依赖
 3. commit的格式：
-> git commit -m 'name - description'
+> git commit -m 'name  description'
   name: 自己github的名字，或自己的名字
   description：自己提交的描述，要具体，小步提交
 
