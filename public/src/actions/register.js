@@ -7,7 +7,7 @@ export const addUser = (errorMessage)=>({
     errorMessage
 });
 
-export const reqAddUser = (username, password,communityName)=> {
+export const reqAddUser = (username, password, communityName, selectSchool)=> {
     return (dispatch)=> {
         request
             .post('/community/register')
@@ -15,7 +15,8 @@ export const reqAddUser = (username, password,communityName)=> {
             .send({
                 username: username,
                 password: password,
-                communityName:communityName
+                communityName: communityName,
+                schoolName: selectSchool
             })
             .end((err, res)=> {
                 if (err) {

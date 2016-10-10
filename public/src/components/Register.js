@@ -3,11 +3,16 @@ import {Link} from 'react-router';
 
 class Register extends Component {
 
-    handlerClick() {
+    constructor(props) {
+        super(props);
+    }
+
+    handleClick() {
         let username = this.refs.username.value;
         let password = this.refs.password.value;
         let communityName = this.refs.communityName.value;
-        this.props.reqAddUser(username, password,communityName);
+        let selectSchool = this.refs.selectSchool.value;
+        this.props.reqAddUser(username, password, communityName, selectSchool);
     }
 
     render() {
@@ -58,14 +63,16 @@ class Register extends Component {
                 <div>
                     <form>
                         <label>选择学校</label>
-                        <select>
-                            <option value="西安邮电大学">西安邮电大学</option>
-                            <option value="西安政法大学">西安政法大学</option>
-                            <option value="陕西师范大学">陕西师范大学</option>
-                            <option value="西安工业大学">西安工业大学</option>
-                            <option value="合肥工业大学">合肥工业大学</option>
-                            <option value="江苏大学">江苏大学</option>
-                            <option value="西北大学">西北大学</option>
+                        <select
+                            ref="selectSchool">
+                            <option >请选择学校</option>
+                            <option >西安邮电大学</option>
+                            <option >西安政法大学</option>
+                            <option >陕西师范大学</option>
+                            <option >西安工业大学</option>
+                            <option >合肥工业大学</option>
+                            <option >江苏大学</option>
+                            <option >西北大学</option>
                         </select>
                     </form>
                 </div>
@@ -73,7 +80,7 @@ class Register extends Component {
                 <button id="register"
                         type="button"
                         className="btn"
-                        onClick={this.handlerClick.bind(this)}>
+                        onClick={this.handleClick.bind(this)}>
                     <strong>注册</strong>
                 </button>
             </div>
