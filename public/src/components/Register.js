@@ -43,6 +43,11 @@ class Register extends Component {
                                ref='rePassword'/>
                     </div>
                 </div>
+                <div>
+                    <form>
+                        <label>选择学校</label>
+                    </form>
+                </div>
                 <div>{this.props.showRegisterMessage}</div>
                 <button id="register"
                         type="button"
