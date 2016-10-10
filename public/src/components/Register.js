@@ -6,10 +6,12 @@ class Register extends Component {
     handlerClick() {
         let username = this.refs.username.value;
         let password = this.refs.password.value;
-        this.props.reqAddUser(username, password);
+        let communityName = this.refs.communityName.value;
+        this.props.reqAddUser(username, password,communityName);
     }
 
     render() {
+
         return (
             <div>
 
@@ -43,9 +45,28 @@ class Register extends Component {
                                ref='rePassword'/>
                     </div>
                 </div>
+                <div className="form-group ">
+                    <label htmlFor="community-name-input" className="col-xs-2 col-form-label">CommunityName</label>
+                    <div className="col-xs-10">
+                        <input className="form-control"
+                               id="username-input"
+                               type="text"
+                               placeholder="社团名"
+                               ref='communityName'/>
+                    </div>
+                </div>
                 <div>
                     <form>
                         <label>选择学校</label>
+                        <select>
+                            <option value="西安邮电大学">西安邮电大学</option>
+                            <option value="西安政法大学">西安政法大学</option>
+                            <option value="陕西师范大学">陕西师范大学</option>
+                            <option value="西安工业大学">西安工业大学</option>
+                            <option value="合肥工业大学">合肥工业大学</option>
+                            <option value="江苏大学">江苏大学</option>
+                            <option value="西北大学">西北大学</option>
+                        </select>
                     </form>
                 </div>
                 <div>{this.props.showRegisterMessage}</div>
@@ -57,7 +78,6 @@ class Register extends Component {
                 </button>
             </div>
         );
-
     }
 }
 

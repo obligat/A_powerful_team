@@ -10,8 +10,8 @@ const mapStateToProps = (state)=> {
 
 const mapDispatchToProps = (dispatch)=> {
     return {
-        reqAddUser: (username, password)=> {
-            dispatch(reqAddUser(username, password));
+        reqAddUser: (username, password,communityName)=> {
+            dispatch(reqAddUser(username, password,communityName));
         }
     }
 };

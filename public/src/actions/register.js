@@ -7,14 +7,15 @@ export const addUser = (errorMessage)=>({
     errorMessage
 });
 
-export const reqAddUser = (username, password)=> {
+export const reqAddUser = (username, password,communityName)=> {
     return (dispatch)=> {
         request
             .post('/community/register')
             .type('form')
             .send({
                 username: username,
-                password: password
+                password: password,
+                communityName:communityName
             })
             .end((err, res)=> {
                 if (err) {
