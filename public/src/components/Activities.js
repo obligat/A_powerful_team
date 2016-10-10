@@ -1,5 +1,5 @@
-import  React, {Component} from 'react';
-import ActivityItem from './ActivityItem';
+import React, {Component} from "react";
+import ActivityItem from "./ActivityItem";
 
 class Activities extends Component {
   render() {
@@ -8,7 +8,8 @@ class Activities extends Component {
         <div className="row scrol">
           {
             activity.map((v, k)=> (
-                <ActivityItem key={k} id={v._id} activityName={v.activityName} activityTime={v.activityTime} activityLocation={v.activityLocation} instruction={v.instruction} />
+                <ActivityItem key={k} id={v._id} activityName={v.activityName} activityTime={v.activityTime}
+                              activityLocation={v.activityLocation} instruction={v.instruction}/>
             ))
           }
         </div>

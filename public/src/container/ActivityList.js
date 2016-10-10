@@ -1,5 +1,5 @@
-import {connect} from 'react-redux';
-import Activities from '../components/Activities';
+import {connect} from "react-redux";
+import Activities from "../components/Activities";
 
 
 const mapStateToProps = (state)=> (state);
