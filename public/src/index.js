@@ -26,7 +26,6 @@ render(
         <Router history={browserHistory}>
             <Route path='/' components={App}>
                 <IndexRoute components={Main}/>
-
                 <Route path='/register' components={Register}/>
                 <Route path='/login' components={Login}/>
                 <Route path="/activityDetail/:id" components={ActivityDetail}/>

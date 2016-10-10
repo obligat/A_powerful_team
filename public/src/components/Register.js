@@ -5,6 +5,42 @@ class Register extends Component {
 
     constructor(props) {
         super(props);
+        this.state = {
+            isPasswordEqual: '',
+            passwordFormatError: ''
+        }
+    }
+
+    checkPasswordFormat() {
+        let password = this.refs.password.value;
+        let pattern = /^.{6,12}$/;
+        let bool = pattern.test(password);
+        if (!bool) {
+            this.setState({
+                passwordFormatError: '密码长度为6～16位'
+            })
+        }
+        else {
+            this.setState({
+                passwordFormatError: ''
+            })
+        }
+
+    }
+
+    checkPasswordSame() {
+        let password = this.refs.password.value;
+        let rePassword = this.refs.rePassword.value;
+        if (!(password === rePassword)) {
+            this.setState({
+                isPasswordEqual: '密码输入不一致'
+            })
+        }
+        else {
+            this.setState({
+                isPasswordEqual: ''
+            })
+        }
     }
 
     handleClick() {
@@ -18,41 +54,46 @@ class Register extends Component {
     render() {
 
         return (
-            <div>
+            <div className="container">
 
-                <div className="form-group ">
-                    <label htmlFor="username-input" className="col-xs-2 col-form-label">Username</label>
-                    <div className="col-xs-10">
+                <div className="form-group  container">
+                    <label className="col-xs-2 col-form-label">Username</label>
+                    <div className="col-xs-6">
                         <input className="form-control"
                                id="username-input"
                                type="text"
                                placeholder="用户名"
                                ref='username'/>
                     </div>
+                    <div className="col-xs-4">{this.props.showRegisterMessage}</div>
                 </div>
-                <div className="form-group ">
+                <div className="form-group  container">
                     <label htmlFor="password-input" className="col-xs-2 col-form-label">Password</label>
-                    <div className="col-xs-10">
+                    <div className="col-xs-6">
                         <input className="form-control"
                                id="password-input"
                                type="password"
                                placeholder="密码"
-                               ref='password'/>
+                               ref='password'
+                               onBlur={this.checkPasswordFormat.bind(this)}/>
                     </div>
+                    <div className="col-xs-4"> {this.state.passwordFormatError}</div>
                 </div>
-                <div className="form-group ">
-                    <label htmlFor="password-input" className="col-xs-2 col-form-label">Password</label>
-                    <div className="col-xs-10">
+                <div className="form-group  container">
+                    <label htmlFor="password-input" className="col-xs-2 col-form-label">ConfirmPassword</label>
+                    <div className="col-xs-6">
                         <input className="form-control"
                                id="password-input-again"
                                type="password"
                                placeholder="确认密码"
-                               ref='rePassword'/>
+                               ref='rePassword'
+                               onBlur={this.checkPasswordSame.bind(this)}/>
                     </div>
+                    <div className="col-xs-4">{this.state.isPasswordEqual}</div>
                 </div>
-                <div className="form-group ">
+                <div className="form-group  container">
                     <label htmlFor="community-name-input" className="col-xs-2 col-form-label">CommunityName</label>
-                    <div className="col-xs-10">
+                    <div className="col-xs-6">
                         <input className="form-control"
                                id="username-input"
                                type="text"
@@ -76,7 +117,7 @@ class Register extends Component {
                         </select>
                     </form>
                 </div>
-                <div>{this.props.showRegisterMessage}</div>
+
                 <button id="register"
                         type="button"
                         className="btn"
