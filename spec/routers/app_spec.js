@@ -1,5 +1,5 @@
-import app from '../../app';
-import request from 'supertest';
+import app from "../../app";
+import request from "supertest";
 
 describe('get /demo', ()=> {
   it('should return obj', (done)=> {
@@ -10,7 +10,7 @@ describe('get /demo', ()=> {
           data: 12334
         })
         .end((err)=> {
-          if(err) {
+          if (err) {
             done.fail(err);
           } else {
             done();
