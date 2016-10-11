@@ -4,7 +4,7 @@
 import mongoose from 'mongoose';
 
 const Activity = mongoose.model('Activity', {
-  id: String,
+  creator: String,
   activityName: String,
   activityTime: String,
   activityLocation: String,
@@ -12,8 +12,7 @@ const Activity = mongoose.model('Activity', {
   comment: [{
     clubName: String,
     message: String
-  }],
-  maxParty: String
+  }]
 });
 
 export default Activity;

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router';
 
 export default class SideBar extends Component {
   render() {
@@ -8,16 +9,16 @@ export default class SideBar extends Component {
             <img src="images/logo.jpg" alt="iPet logo"></img>
           </div>
           <div>
-            <h4>新建活动</h4>
+            <Link to="/newActivity"><span>新建活动</span></Link>
           </div>
           <div>
-            <h4>我发布的活动</h4>
+            <Link to="/"><span>我发布的活动</span></Link>
           </div>
           <div>
-            <h4>我参加的活动</h4>
+            <Link to="/"><span>我参加的活动</span></Link>
           </div>
           <div>
-            <h4>退出</h4>
+            <Link to="/login"><span>退出</span></Link>
           </div>
         </div>
     );
