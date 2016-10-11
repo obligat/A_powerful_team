@@ -11,19 +11,19 @@ export default {
       comment: [
         {
           clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
+          message: '欢迎参加我社举办的棋艺比赛',
         },
         {
           clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
+          message: '欢迎参加我社举办的棋艺比赛',
         },
         {
           clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
+          message: '欢迎参加我社举办的棋艺比赛',
         },
         {
           clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
+          message: '欢迎参加我社举办的棋艺比赛',
         }
       ]
     },
@@ -34,7 +34,7 @@ export default {
       instruction: '每一次的跌倒不是失败，而是走向青春舞台的必经之路！来吧，只要你想轮滑，只要你喜欢轮滑，还在等什么？亮出追风的姿态，出发吧！',
       comment: {
         clubName: '轮滑社',
-        message: '一起滑翔'
+        message: '一起滑翔',
       }
     },
     {
@@ -45,19 +45,19 @@ export default {
       comment: [
         {
           clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
+          message: '欢迎参加我社举办的棋艺比赛',
         },
         {
           clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
+          message: '欢迎参加我社举办的棋艺比赛',
         },
         {
           clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
+          message: '欢迎参加我社举办的棋艺比赛',
         },
         {
           clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
+          message: '欢迎参加我社举办的棋艺比赛',
         }
       ]
     },
@@ -93,19 +93,19 @@ export default {
       comment: [
         {
           clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
+          message: '欢迎参加我社举办的棋艺比赛',
         },
         {
           clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
+          message: '欢迎参加我社举办的棋艺比赛',
         },
         {
           clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
+          message: '欢迎参加我社举办的棋艺比赛',
         },
         {
           clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
+          message: '欢迎参加我社举办的棋艺比赛',
         }
       ]
     },
@@ -117,19 +117,19 @@ export default {
       comment: [
         {
           clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
+          message: '欢迎参加我社举办的棋艺比赛',
         },
         {
           clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
+          message: '欢迎参加我社举办的棋艺比赛',
         },
         {
           clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
+          message: '欢迎参加我社举办的棋艺比赛',
         },
         {
           clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
+          message: '欢迎参加我社举办的棋艺比赛',
         }
       ]
     },
@@ -141,19 +141,19 @@ export default {
       comment: [
         {
           clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
+          message: '欢迎参加我社举办的棋艺比赛',
         },
         {
           clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
+          message: '欢迎参加我社举办的棋艺比赛',
         },
         {
           clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
+          message: '欢迎参加我社举办的棋艺比赛',
         },
         {
           clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
+          message: '欢迎参加我社举办的棋艺比赛',
         }
       ]
     },
@@ -165,19 +165,19 @@ export default {
       comment: [
         {
           clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
+          message: '欢迎参加我社举办的棋艺比赛',
         },
         {
           clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
+          message: '欢迎参加我社举办的棋艺比赛',
         },
         {
           clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
+          message: '欢迎参加我社举办的棋艺比赛',
         },
         {
           clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
+          message: '欢迎参加我社举办的棋艺比赛',
         }
       ]
     }
@@ -193,7 +193,7 @@ export default {
             以棋会友,以棋会师是我们的口号，我们的棋技会在这里提高，
             我们的友谊会在这里升华，只要我们努力学棋，就会创造出棋社的辉煌。`,
       email: '12345678911',
-      tel: '15829363000'
+      tel: '15829363000',
     },
     {
       username: 'myc123',
@@ -206,7 +206,7 @@ export default {
             学生社团，在大学生心理健康教育中心的指导下和学生社团联合会的管理、
             监督下开展活动。`,
       email: '12345678911',
-      tel: '15829363000'
+      tel: '15829363000',
     },
     {
       username: 'myc123',
@@ -218,7 +218,7 @@ export default {
             以弘扬传统艺术为宗旨，以相声为主，其它曲艺形式和戏曲为辅进行发展。
             多次活跃在校园各类文化活动中，为同学们带来欢乐的笑声。`,
       email: '12345678911',
-      tel: '15829363000'
+      tel: '15829363000',
     },
     {
       username: 'myc123',
@@ -231,7 +231,7 @@ export default {
                           的课余生活，推广轮滑运动.
                           我们的口号是：轮子上的青春，让你我一起滑动。`,
       email: '12345678911',
-      tel: '15829363000'
+      tel: '15829363000',
     },
     {
       username: 'myc123',
@@ -243,7 +243,7 @@ export default {
                         COS部门主要教化妆服饰动漫，摄影部负责主要的PS工作与讲解，
                         另外，动漫社常在YY上进行配音课堂活动。`,
       email: '12345678911',
-      tel: '15829363000'
+      tel: '15829363000',
     },
     {
       username: 'myc123',
@@ -259,7 +259,7 @@ export default {
                宣传策划部      做好社团活动的宣传设计、制作及活动布景，并且致力于
                              传播社团信息，传承社团文化，力求营造良好的社团文化氛围。`,
       email: '12345678911',
-      tel: '15829363000'
+      tel: '15829363000',
     }
   ]
 };

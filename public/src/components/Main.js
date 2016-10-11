@@ -4,16 +4,16 @@ import SideBar from './SideBar';
 
 class Main extends Component {
 
-    render() {
-        return (
-            <div>
-                <div className="container">
-                    <SideBar/>
-                    <ActivityList/>
-                </div>
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div>
+        <div className="container">
+          <SideBar/>
+          <ActivityList/>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default Main;

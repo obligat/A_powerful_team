@@ -1,4 +1,4 @@
-import {RECEIVE_ACTIVITY_DETAIL} from "../actions/activityDetail";
+import {RECEIVE_ACTIVITY_DETAIL} from '../actions/activityDetail';
 
 const activityDetail = (state = [], action)=> {
   switch (action.type) {

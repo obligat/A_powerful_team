@@ -5,15 +5,15 @@ import Foot from './Foot';
 
 class App extends Component {
 
-    render() {
-        return (
-            <div>
-                <Head/>
-                {this.props.children}
-                <Foot/>
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div>
+        <Head/>
+        {this.props.children}
+        <Foot/>
+      </div>
+    );
+  }
 }
 
 export default App;

@@ -13,24 +13,24 @@ import {Provider} from 'react-redux';
 import activitiesRequestMiddleware from './middlewares/activitiesRequestMiddleware';
 
 const store = createStore(
-    activityList,
-    applyMiddleware(activitiesRequestMiddleware, thunkMiddleware)
+  activityList,
+  applyMiddleware(activitiesRequestMiddleware, thunkMiddleware)
 );
 
 store.dispatch({
-    type: 'INIT'
+  type: 'INIT'
 });
 
 render(
-    <Provider store={store}>
-        <Router history={browserHistory}>
-            <Route path='/' components={App}>
-                <IndexRoute components={Main}/>
-                <Route path='/register' components={Register}/>
-                <Route path='/login' components={Login}/>
-                <Route path="/activityDetail/:id" components={ActivityDetail}/>
-            </Route>
-        </Router>
-    </Provider>,
-    document.getElementById('app')
+  <Provider store={store}>
+    <Router history={browserHistory}>
+      <Route path='/' components={App}>
+        <IndexRoute components={Main}/>
+        <Route path='/register' components={Register}/>
+        <Route path='/login' components={Login}/>
+        <Route path="/activityDetail/:id" components={ActivityDetail}/>
+      </Route>
+    </Router>
+  </Provider>,
+  document.getElementById('app')
 );

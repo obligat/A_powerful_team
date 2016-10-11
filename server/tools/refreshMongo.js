@@ -16,9 +16,9 @@ Object.keys(activityRawData).forEach(v => {
   modelsMap[v].remove(()=> {
     modelsMap[v].create(activityRawData[v], ()=> {
       acti = acti.filter(doc => doc !== v);
-     // console.log(`The data of ${v} created`);
-      if(acti.length === 0) {
-       // console.log(`All data refreshed`);
+      // console.log(`The data of ${v} created`);
+      if (acti.length === 0) {
+        // console.log(`All data refreshed`);
         process.exit(0);
       }
     });

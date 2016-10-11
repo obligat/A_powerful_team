@@ -1,4 +1,4 @@
-import request from "superagent";
+import request from 'superagent';
 
 export const RECEIVE_ACTIVITY_DETAIL = 'RECEIVE_ACTIVITY_DETAIL';
 export const RECEIVE_COMMUNITY = 'RECEIVE_COMMUNITY';
@@ -14,8 +14,8 @@ export const requestActivityDetail = (id)=> {
           else {
             dispatch(receiveActivityDetail(res.body));
           }
-        })
-  }
+        });
+  };
 };
 
 export const requestCommunity = (communityName) => {
@@ -25,25 +25,25 @@ export const requestCommunity = (communityName) => {
         .query({communityName})
         .end((err, res)=> {
           if (err) {
-            throw err
+            throw err;
           }
           else {
             dispatch(receiveCommunity(res.body));
           }
-        })
-  }
+        });
+  };
 };
 
 export const receiveActivityDetail = (detail)=> {
   return ({
     type: RECEIVE_ACTIVITY_DETAIL,
     detail
-  })
+  });
 };
 
 export const receiveCommunity = (data)=> {
   return ({
     type: RECEIVE_COMMUNITY,
     data
-  })
+  });
 };

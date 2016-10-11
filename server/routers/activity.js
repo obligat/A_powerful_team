@@ -1,8 +1,8 @@
 /**
  * Created by myc on 10/1/16.
  */
-import express from "express";
-import Activity from "../models/Activity";
+import express from 'express';
+import Activity from '../models/Activity';
 
 let router = express.Router();
 

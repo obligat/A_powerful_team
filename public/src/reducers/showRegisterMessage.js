@@ -1,4 +1,4 @@
-import {ADD_USER} from "../actions/register";
+import {ADD_USER} from '../actions/register';
 
 const showRegisterMessage = (state = false, action)=> {
   switch (action.type) {

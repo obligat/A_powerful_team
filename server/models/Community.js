@@ -1,7 +1,7 @@
 /**
  * Created by myc on 10/1/16.
  */
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
 const Community = mongoose.model('Community', {
   username: String,
