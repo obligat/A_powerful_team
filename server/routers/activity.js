@@ -39,7 +39,15 @@ router.put('/:_id', (req, res)=> {
 
 router.post('/', (req, res, next)=> {
   new Activity({
-    activityName: req.body.activityName
+    creator: 'jjj',
+    activityName:req.body.activityName,
+    activityTime:req.body.activityTime,
+    activityLocation:req.body.activityLocation,
+    instruction:req.body.instruction,
+    comment: [{
+      clubName: 'jjj',
+      message: 'jjj'
+    }]
   }).save((err, todo) => {
     if (err) {
       return next(err);
