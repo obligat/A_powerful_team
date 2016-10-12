@@ -5,6 +5,19 @@ import React, {Component} from 'react';
 import {Link} from 'react-router';
 
 class NewActivity extends Component {
+
+  constructor(props) {
+    super(props);
+  }
+
+  handleClick() {
+    let activityName = this.refs.activityName.value;
+    let activityTime = this.refs.activityTime.value;
+    let activityLocation = this.refs.activityLocation.value;
+    let instruction = this.refs.instruction.value;
+    this.props.reqAddActivity(activityName, activityTime, activityLocation, instruction);
+  }
+
   render() {
     return (
         <div className="container">
@@ -15,7 +28,8 @@ class NewActivity extends Component {
               <input className="form-control"
                      id="activityName-input"
                      type="text"
-                     placeholder="活动名"/>
+                     placeholder="活动名"
+                     ref='activityName'/>
             </div>
           </div>
 
@@ -25,7 +39,8 @@ class NewActivity extends Component {
               <input className="form-control"
                      id="activityTime-input"
                      type="text"
-                     placeholder="活动时间"/>
+                     placeholder="活动时间"
+                     ref='activityTime'/>
             </div>
           </div>
 
@@ -35,7 +50,8 @@ class NewActivity extends Component {
               <input className="form-control"
                      id="activityLocation-input"
                      type="text"
-                     placeholder="活动地点"/>
+                     placeholder="活动地点"
+                     ref='activityLocation'/>
             </div>
           </div>
 
@@ -43,9 +59,10 @@ class NewActivity extends Component {
             <label className="col-xs-2 col-form-label">instruction</label>
             <div className="col-xs-6">
               <textarea className="form-control"
-                        rows="3"
+                        id="instruction-input"
                         placeholder="活动简介"
-                        style={{height: '350px'}}>
+                        style={{height: '350px'}}
+                        ref='instruction'>
 
               </textarea>
             </div>
@@ -53,21 +70,22 @@ class NewActivity extends Component {
 
           <button id="addNewActivity"
                   type="button"
-                  className="btn">
+                  className="btn"
+                  onClick={this.handleClick.bind(this)}>
             <strong>新建</strong>
           </button>
-          
+
           <Link to="/">
-            <button id="cancelBulid" 
+            <button id="cancelBulid"
                     type="button"
                     className="btn">
-            <strong>取消</strong>
-          </button>
+              <strong>取消</strong>
+            </button>
           </Link>
 
         </div>
     );
-    }
   }
+}
 
 export default NewActivity;
