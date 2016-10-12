@@ -13,7 +13,7 @@ export const addActivity = (errorMessage)=>({
 export const reqAddActivity = (activityName, activityTime, activityLocation, instruction)=> {
   return (dispatch)=> {
     request
-        .post('/activity')
+        .post('/activity/save')
         .type('form')
         .send({
           activityName:activityName,

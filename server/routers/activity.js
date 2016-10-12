@@ -37,7 +37,7 @@ router.put('/:_id', (req, res)=> {
   });
 });
 
-router.post('/', (req, res, next)=> {
+router.post('/save', (req, res, next)=> {
   new Activity({
     creator: 'jjj',
     activityName:req.body.activityName,
