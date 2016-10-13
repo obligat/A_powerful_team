@@ -2,10 +2,12 @@ import mongoose from 'mongoose';
 import activityRawData from './fixture/activityRawData';
 import Activity from '../models/Activity';
 import Community from '../models/Community';
+import LoginCookie from '../models/LoginCookie';
 
 const modelsMap = {
   Activity,
-  Community
+  Community,
+  LoginCookie
 };
 
 let acti = Object.keys(activityRawData);

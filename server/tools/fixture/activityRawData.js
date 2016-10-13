@@ -2,6 +2,12 @@
  * Created by myc on 10/1/16.
  */
 export default {
+  LoginCookie:[
+    {
+      username:'apple',
+      password:'1234567',
+    }
+  ],
   Activity: [
     {
       activityName: '阳光杯棋奕赛',
