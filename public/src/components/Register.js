@@ -45,12 +45,24 @@ class Register extends Component {
   handleClick() {
     let username = this.refs.username.value;
     let password = this.refs.password.value;
+    let rePassword = this.refs.rePassword.value;
     let communityName = this.refs.communityName.value;
     let selectSchool = this.refs.selectSchool.value;
-    this.props.reqAddUser(username, password, communityName, selectSchool);
+    if (password === rePassword) {
+      this.props.reqAddUser(username, password, communityName, selectSchool);
+    }
+  }
+
+  componentWillUpdate(nextProps) {
+    let userError = nextProps.showRegisterMessage.error;
+    if (userError === '') {
+      this.props.router.push('/login');
+    }
   }
 
   render() {
+
+    let userError = this.props.showRegisterMessage.error;
 
     return (
         <div className="container">
@@ -64,7 +76,7 @@ class Register extends Component {
                      placeholder="用户名"
                      ref='username'/>
             </div>
-            <div className="col-xs-4">{this.props.showRegisterMessage}</div>
+            <div className="col-xs-4">{userError}</div>
           </div>
           <div className="form-group  container">
             <label htmlFor="password-input" className="col-xs-2 col-form-label">Password</label>
