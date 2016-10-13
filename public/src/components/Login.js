@@ -2,7 +2,43 @@ import React, {Component} from 'react';
 import {Link} from 'react-router';
 
 class Login extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      usernameError: '',
+      passwordError: ''
+    };
+  }
+
+  checkUserExist() {
+    let username = this.refs.username.value;
+    this.props.checkUserExist(username);
+
+  }
+
+  handleClick() {
+    let username = this.refs.username.value;
+    let password = this.refs.password.value;
+    this.props.checkLoginValid(username, password);
+  }
+
+  componentWillUpdate(nextProps) {
+
+  }
+
+  componentWillReceiveProps(nextProps) {
+    let usernameError = nextProps.showLoginMessage.userError;
+    let passwordError = nextProps.showLoginMessage.pwsError;
+
+    this.setState({
+      usernameError: usernameError,
+      passwordError: passwordError
+    });
+  }
+
   render() {
+
 
     return (
         <div className="container">
@@ -13,8 +49,12 @@ class Login extends Component {
               <input className="form-control"
                      id="username-input"
                      type="text"
-                     placeholder="用户名"/>
+                     placeholder="用户名"
+                     ref="username"
+                     onBlur={this.checkUserExist.bind(this)}
+              />
             </div>
+            <span className="col-xs-6">{this.state.usernameError}</span>
           </div>
 
           <div className="form-group  container">
@@ -23,17 +63,21 @@ class Login extends Component {
               <input className="form-control"
                      id="password-input"
                      type="text"
-                     placeholder="密码"/>
+                     placeholder="密码"
+                     ref="password"
+              />
             </div>
+            <span className="col-xs-6">{this.state.passwordError}</span>
           </div>
 
-          <Link to="/">
-            <button id="cancelBulid"
-                    type="button"
-                    className="btn">
-              <strong>登录</strong>
-            </button>
-          </Link>
+
+          <button id="cancelBulid"
+                  type="button"
+                  className="btn"
+                  onClick={this.handleClick.bind(this)}>
+            <strong>登录</strong>
+          </button>
+
 
           <Link to="/register">
             <button id="cancelBulid"
