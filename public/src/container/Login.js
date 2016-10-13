@@ -1,4 +1,5 @@
 import {connect} from 'react-redux';
+import {withRouter} from 'react-router'
 import {checkUserExist, checkLoginValid} from '../actions/login';
 import Login from '../components/Login';
 
@@ -19,4 +20,4 @@ const mapDispatchToProps = (dispatch)=> {
   }
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Login);
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter(Login));

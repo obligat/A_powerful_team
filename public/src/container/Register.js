@@ -1,4 +1,5 @@
 import {connect} from 'react-redux';
+import {withRouter} from 'react-router';
 import {reqAddUser} from '../actions/register';
 import Register from '../components/Register';
 
@@ -16,4 +17,4 @@ const mapDispatchToProps = (dispatch)=> {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Register);
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter(Register));
