@@ -23,10 +23,6 @@ class Login extends Component {
     this.props.checkLoginValid(username, password);
   }
 
-  componentWillUpdate(nextProps) {
-
-  }
-
   componentWillReceiveProps(nextProps) {
     let usernameError = nextProps.showLoginMessage.userError;
     let passwordError = nextProps.showLoginMessage.pwsError;
@@ -35,6 +31,14 @@ class Login extends Component {
       usernameError: usernameError,
       passwordError: passwordError
     });
+  }
+
+  componentWillUpdate(nextProps) {
+    let usernameError = nextProps.showLoginMessage.userError;
+    let passwordError = nextProps.showLoginMessage.pwsError;
+    if( usernameError===''&&passwordError===''){
+      this.props.router.push('/');
+    }
   }
 
   render() {
