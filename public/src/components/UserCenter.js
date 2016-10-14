@@ -16,7 +16,7 @@ class UserCenter extends Component {
           <div>{communityName}</div>
           <div>{schoolName}</div>
           <div>
-            <img src={logo} alt='community logo '></img>
+            <img src={'../'+logo} alt='community logo '/>
           </div>
           <div>{username}</div>
           <div>{email}</div>
