@@ -69,23 +69,58 @@ router.post('/login/isValidLogin', (req, res)=> {
             var randomId = uuid.v4();
             new LoginCookie({
               username: req.body.username,
-              password: req.body.password,
               randomId: randomId
             }).save((err, user)=> {
               if (err) {
                 throw err;
               }
               else {
-                res.cookie('UUID', randomId);
+                res.cookie('randomId', randomId);
                 res.send({pwsError: ''});
               }
             })
           }
-          else{
+          else {
             res.send({pwsError: "密码不正确"});
           }
         }
       });
+});
+
+
+router.get('/reqUserName', (req, res)=> {
+
+  if (req.cookies.randomId) {
+    LoginCookie.findOne({randomId: req.cookies.randomId}, (err, doc)=> {
+      if (err) {
+        throw err;
+      } else {
+        res.send(doc.username);
+      }
+    });
+  }
+  else {
+
+  }
+});
+
+router.get('/userCenter/:username', (req, res)=> {
+
+  Community.findOne({username: req.params.username}, (err, doc)=> {
+    if (err) {
+      throw err;
+    } else {
+      res.send({
+        username: doc.username,
+        schoolName: doc.schoolName,
+        communityName: doc.communityName,
+        logo: doc.logo,
+        description: doc.description,
+        email: doc.email,
+        tel: doc.tel
+      });
+    }
+  })
 });
 
 
