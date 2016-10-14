@@ -5,7 +5,7 @@ import NewActivity from '../components/NewActivity';
 
 const mapStateToProps = (state)=> {
   return {
-    addNewActivityResult: state.addNewActivityResult
+    addNewActivity: state.addNewActivity
   };
 };
 
