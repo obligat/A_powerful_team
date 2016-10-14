@@ -36,8 +36,8 @@ class Login extends Component {
   componentWillUpdate(nextProps) {
     let usernameError = nextProps.showLoginMessage.userError;
     let passwordError = nextProps.showLoginMessage.pwsError;
-    if( usernameError===''&&passwordError===''){
-      this.props.router.push('/');
+    if (usernameError === '' && passwordError === '') {
+      this.props.router.push('/main');
     }
   }
 
