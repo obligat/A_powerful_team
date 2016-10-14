@@ -4,8 +4,7 @@
 export default {
   LoginCookie:[
     {
-      username:'apple',
-      password:'1234567',
+      username:'myc123',
     }
   ],
   Activity: [
@@ -202,7 +201,7 @@ export default {
       tel: '15829363000',
     },
     {
-      username: 'myc123',
+      username: 'apple',
       password: '123456',
       schoolName: '西安政法大学',
       communityName: '大学生心理健康协会',
@@ -215,7 +214,7 @@ export default {
       tel: '15829363000',
     },
     {
-      username: 'myc123',
+      username: 'pear',
       password: '123456',
       schoolName: '江苏大学',
       communityName: '曲艺社',
@@ -227,7 +226,7 @@ export default {
       tel: '15829363000',
     },
     {
-      username: 'myc123',
+      username: 'banana',
       password: '123456',
       schoolName: '西北大学',
       communityName: '轮滑社',
@@ -240,7 +239,7 @@ export default {
       tel: '15829363000',
     },
     {
-      username: 'myc123',
+      username: 'panda',
       password: '123456',
       schoolName: '陕西师范大学',
       communityName: 'vivid动漫社',
@@ -252,7 +251,7 @@ export default {
       tel: '15829363000',
     },
     {
-      username: 'myc123',
+      username: 'hippo',
       password: '123456',
       schoolName: '合肥工业大学',
       communityName: '社团联合会',
