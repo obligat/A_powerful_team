@@ -75,6 +75,8 @@ class NewActivity extends Component {
     let stateRight4 = this.state.isRightInstruction;
     if (stateRight1 === '' && stateRight2 === '' && stateRight3 === '' && stateRight4 === '') {
       this.props.reqAddActivity(activityName, activityTime, activityLocation, instruction);
+      alert('新建活动成功，点击确定回到首页！');
+      this.props.router.push('/main');
     }
   }
 
