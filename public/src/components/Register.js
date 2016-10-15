@@ -48,7 +48,7 @@ class Register extends Component {
     let rePassword = this.refs.rePassword.value;
     let communityName = this.refs.communityName.value;
     let selectSchool = this.refs.selectSchool.value;
-    if (password === rePassword) {
+    if (password === rePassword && this.state.isPasswordEqual==='' && this.state.passwordFormatError==='') {
       this.props.reqAddUser(username, password, communityName, selectSchool);
     }
   }
