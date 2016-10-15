@@ -32,7 +32,7 @@ class SideBar extends Component {
             <img src="images/logo.jpg" alt="iPet logo"></img>
           </div>
           <div>
-            <Link to={'/userCenter/' + username}><span>个人中心：{this.state.userInfo}</span></Link>
+            <Link to={'/userCenter/' + username}><span>个人中心</span></Link>
           </div>
           <div>
             <Link to="/newActivity"><span>新建活动</span></Link>
