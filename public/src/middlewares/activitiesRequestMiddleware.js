@@ -12,6 +12,15 @@ const activitiesRequestMiddleware = store=> next=> action=> {
           });
         });
       break;
+    case 'ACTIVITY_LOADED':
+      request.get('/activity/' + action._id)
+          .end((err, res)=> {
+            next({
+              type: 'MY_ACTIVITY_LOADED',
+              data: res.body
+            });
+          });
+      break;
   }
   next(action);
 };
