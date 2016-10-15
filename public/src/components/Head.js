@@ -11,7 +11,7 @@ class Head extends Component {
           </div>
         </div>
         <div className="col-xs-8 ">
-          <Link to="/"><span>首页    </span></Link>
+          <Link to="/main"><span>首页    </span></Link>
           <Link to="/login"><span>登陆    </span></Link>
           <Link to="/register"><span>注册    </span></Link>
         </div>
