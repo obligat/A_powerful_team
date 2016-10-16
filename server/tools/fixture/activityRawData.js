@@ -2,13 +2,14 @@
  * Created by myc on 10/1/16.
  */
 export default {
-  LoginCookie:[
+  LoginCookie: [
     {
-      username:'myc123',
+      username: 'myc123',
     }
   ],
   Activity: [
     {
+      creator: 'myc123',
       activityName: '阳光杯棋奕赛',
       activityTime: '今天',
       activityLocation: '西安邮电大学体育馆内',
@@ -33,16 +34,20 @@ export default {
       ]
     },
     {
+      creator: 'myc123',
       activityName: '轮滑——滑出精彩',
       activityTime: '明天',
       activityLocation: '西北大学操场',
       instruction: '每一次的跌倒不是失败，而是走向青春舞台的必经之路！来吧，只要你想轮滑，只要你喜欢轮滑，还在等什么？亮出追风的姿态，出发吧！',
-      comment: {
-        clubName: '轮滑社',
-        message: '一起滑翔',
-      }
+      comment: [
+        {
+          clubName: '轮滑社',
+          message: '一起滑翔',
+        }
+      ]
     },
     {
+      creator: 'banana',
       activityName: `let's cos,let's show`,
       activityTime: 'today',
       activityLocation: '陕西师范大学南校区操场',
@@ -67,6 +72,7 @@ export default {
       ]
     },
     {
+      creator: 'banana',
       activityName: '醉美端阳 戏话白蛇',
       activityTime: 'today',
       activityLocation: '江苏大学大学生活动中心',
@@ -91,6 +97,7 @@ export default {
       ]
     },
     {
+      creator: 'banana',
       activityName: '8分钟约会',
       activityTime: 'today',
       activityLocation: '山东大学中心校区星咖啡餐厅',
@@ -115,6 +122,7 @@ export default {
       ]
     },
     {
+      creator: 'apple',
       activityName: '“萌化大学”创意绘画大赛',
       activityTime: 'today',
       activityLocation: '合肥工业大学翡翠湖校区5教208',
@@ -139,6 +147,7 @@ export default {
       ]
     },
     {
+      creator: 'apple',
       activityName: '机智应对，密室脱险',
       activityTime: 'today',
       activityLocation: '西安政法大学A栋教学楼',
@@ -163,6 +172,7 @@ export default {
       ]
     },
     {
+      creator: 'pear',
       activityName: '“一触即发”联动装置大赛',
       activityTime: 'today',
       activityLocation: '西安理工大学操场',
