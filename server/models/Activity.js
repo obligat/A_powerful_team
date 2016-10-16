@@ -12,7 +12,8 @@ const Activity = mongoose.model('Activity', {
   comment: [{
     clubName: String,
     message: String
-  }]
+  }],
+  participator: [String]
 });
 
 export default Activity;
