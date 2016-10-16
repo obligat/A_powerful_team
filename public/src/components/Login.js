@@ -66,7 +66,7 @@ class Login extends Component {
             <div className="col-xs-2">
               <input className="form-control"
                      id="password-input"
-                     type="text"
+                     type="password"
                      placeholder="密码"
                      ref="password"
               />
