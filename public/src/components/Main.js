@@ -45,19 +45,22 @@ class Main extends Component {
               <img src="images/logo.jpg" alt="iPet logo"></img>
             </div>
             <div>
-              <Link to={'/userCenter/' + username}><span>个人中心:</span></Link>
+              <Link to={'/userCenter/' + username}><button>个人中心</button></Link>
             </div>
             <div>
-              <Link to="/newActivity"><span>新建活动</span></Link>
+              <Link to="/newActivity"><button>新建活动</button></Link>
             </div>
             <div>
-              <a onClick={this.handleClickCreate.bind(this)}>我发布的活动</a>
+              <Link to="/main"><button>所有活动</button></Link>
             </div>
             <div>
-              <a onClick={this.handleClickJoin.bind(this)}>我参加的活动</a>
+              <a onClick={this.handleClickCreate.bind(this)}><button>我发布的活动</button></a>
             </div>
             <div>
-              <Link to="/login"><span>退出</span></Link>
+              <a onClick={this.handleClickJoin.bind(this)}><button>我参加的活动</button></a>
+            </div>
+            <div>
+              <Link to="/login"><button>退出</button></Link>
             </div>
           </div>
           <div className="row scrol">
