@@ -51,10 +51,10 @@ class Main extends Component {
               <Link to="/newActivity"><span>新建活动</span></Link>
             </div>
             <div>
-              <span onClick={this.handleClickCreate.bind(this)}>我发布的活动</span>
+              <a onClick={this.handleClickCreate.bind(this)}>我发布的活动</a>
             </div>
             <div>
-              <span onClick={this.handleClickJoin.bind(this)}>我参加的活动</span>
+              <a onClick={this.handleClickJoin.bind(this)}>我参加的活动</a>
             </div>
             <div>
               <Link to="/login"><span>退出</span></Link>
