@@ -1,8 +1,10 @@
 /**
  * Created by myc on 10/12/16.
  */
-import React, {Component} from 'react';
-import {Link} from 'react-router';
+import React, {Component} from "react";
+import {Link} from "react-router";
+import {connect} from "react-redux";
+import {reqUserName} from "../actions/showUserInfo";
 
 class NewActivity extends Component {
 
@@ -14,6 +16,10 @@ class NewActivity extends Component {
       isRightActivityLocation: '',
       isRightInstruction: '',
     };
+  }
+
+  componentDidMount() {
+    this.props.reqUserName();
   }
 
   checkName() {
@@ -73,8 +79,9 @@ class NewActivity extends Component {
     let stateRight2 = this.state.isRightActivityName;
     let stateRight3 = this.state.isRightActivityTime;
     let stateRight4 = this.state.isRightInstruction;
+    let username = this.props.reqUserNameResult;
     if (stateRight1 === '' && stateRight2 === '' && stateRight3 === '' && stateRight4 === '') {
-      this.props.reqAddActivity(activityName, activityTime, activityLocation, instruction);
+      this.props.reqAddActivity(username, activityName, activityTime, activityLocation, instruction);
       alert('新建活动成功，点击确定回到首页！');
       this.props.router.push('/main');
     }
@@ -156,4 +163,13 @@ class NewActivity extends Component {
   }
 }
 
-export default NewActivity;
+const mapStateToProps = state=>state;
+const mapDispatchToProps = (dispatch)=> {
+  return {
+    reqUserName: ()=> {
+      dispatch(reqUserName());
+    }
+  }
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(NewActivity);
