@@ -9,7 +9,7 @@ export default class ActivityDetail extends Component {
   }
   
   render() {
-    const {creator, activityName, activityTime, activityLocation, instruction}=this.props.activityDetail;
+    const {creator, activityName, activityTime, activityLocation, instruction,participator}=this.props.activityDetail;
     return (
         <div>
           <div>
@@ -18,6 +18,7 @@ export default class ActivityDetail extends Component {
               <div>举办者：{creator}</div>
               <div>举办时间：{activityTime}</div>
               <div>举办地点：{activityLocation}</div>
+              <div>参加者：{participator}</div>
             </div>
           </div>
           <div className="col-xs-8">
