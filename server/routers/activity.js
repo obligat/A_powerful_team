@@ -37,6 +37,16 @@ router.put('/:_id', (req, res)=> {
   });
 });
 
+router.post('/join/:id',(req,res)=>{
+  Activity.update({
+    _id:req.params.id
+  },{$addToSet:{participator:req.body.username}
+
+  },(err,data)=>{
+     res.send({message: 'success join'});
+  })
+});
+
 router.post('/save', (req, res, next)=> {
   new Activity({
     creator: req.body.username,
