@@ -3,6 +3,7 @@ import {Link} from 'react-router';
 import {connect} from 'react-redux';
 import Activities from './Activities';
 import {reqUserName} from '../actions/showUserInfo';
+import {reqLogout} from '../actions/login';
 
 class Main extends Component {
 
@@ -17,9 +18,9 @@ class Main extends Component {
     this.props.reqUserName();
   }
 
-  componentWillReceiveProps(nextProps){
+  componentWillReceiveProps(nextProps) {
     this.setState({
-      showType:nextProps.activities
+      showType: nextProps.activities
     });
   }
 
@@ -35,6 +36,10 @@ class Main extends Component {
     });
   }
 
+  logout() {
+    this.props.reqLogout();
+  }
+
   render() {
 
     const username = this.props.reqUserNameResult;
@@ -42,7 +47,7 @@ class Main extends Component {
         <div>
           <div className="col-xs-3">
             <div>
-              <img src="images/logo.jpg" alt="iPet logo"></img>
+              <img src="images/logo.jpg" alt="iPet logo"/>
             </div>
             <div>
               <Link to={'/userCenter/' + username}><button>个人中心</button></Link>
@@ -60,7 +65,7 @@ class Main extends Component {
               <a onClick={this.handleClickJoin.bind(this)}><button>我参加的活动</button></a>
             </div>
             <div>
-              <Link to="/login"><button>退出</button></Link>
+              <button onClick={this.logout.bind(this)}>退出</button>
             </div>
           </div>
           <div className="row scrol">
@@ -76,6 +81,9 @@ const mapDispatchToProps = (dispatch)=> {
   return {
     reqUserName: ()=> {
       dispatch(reqUserName());
+    },
+    reqLogout: ()=> {
+      dispatch(reqLogout());
     }
   }
 };

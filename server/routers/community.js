@@ -87,6 +87,20 @@ router.post('/login/isValidLogin', (req, res)=> {
       });
 });
 
+router.post('/logout', (req, res)=> {
+
+  LoginCookie
+      .find((err, data)=> {
+        if (err) {
+          throw err;
+        }
+        else {
+          res.clearCookie('randomId', {path: '/'});
+          res.send();
+        }
+      });
+});
+
 
 router.get('/reqUserName', (req, res)=> {
 

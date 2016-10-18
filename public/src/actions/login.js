@@ -4,6 +4,8 @@ export const USER_NOT_EXIST = 'USER_NOT_EXIST';
 
 export const PASSWORD_NOT_CORRECT = 'PASSWORD_NOT_CORRECT';
 
+export const LOGOUT = 'LOGOUT';
+
 export const userExist = (userError)=> {
   return {
     type: USER_NOT_EXIST,
@@ -16,6 +18,12 @@ export const passwordCorrect = (pwsError)=> {
     type: PASSWORD_NOT_CORRECT,
     pwsError
   };
+};
+
+export const logout = ()=> {
+  return {
+    type: LOGOUT
+  }
 };
 
 export const checkUserExist = (username)=> {
@@ -53,3 +61,16 @@ export const checkLoginValid = (username, password)=> {
   };
 };
 
+export const reqLogout =()=>{
+  return(dispatch)=>{
+    request
+        .post('/community/logout')
+        .end((err,res)=>{
+          if(err){
+            throw err;
+          }else{
+            dispatch(logout());
+          }
+        })
+  }
+};
