@@ -6,6 +6,7 @@ import addNewActivity from './addNewActivity';
 import showLoginMessage from './showLoginMessage';
 import showUserInfo from './showUserInfo';
 import reqUserNameResult from './reqUserNameResult';
+import joinResult from './joinResult';
 
 const resultList = combineReducers({
   activities,
@@ -14,7 +15,8 @@ const resultList = combineReducers({
   showLoginMessage,
   addNewActivity,
   showUserInfo,
-  reqUserNameResult
+  reqUserNameResult,
+  joinResult
 });
 
 export default resultList;
