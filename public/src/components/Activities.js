@@ -3,13 +3,6 @@ import ActivityItem from './ActivityItem';
 
 class Activities extends Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      activities:this.props.activities
-    };
-  }
-
   render() {
     return (
         <div>
