@@ -37,13 +37,25 @@ router.put('/:_id', (req, res)=> {
   });
 });
 
-router.post('/join/:id',(req,res)=>{
+router.post('/join/:id', (req, res)=> {
   Activity.update({
-    _id:req.params.id
-  },{$addToSet:{participator:req.body.username}
+    _id: req.params.id
+  }, {
+    $addToSet: {participator: req.body.username}
 
-  },(err,data)=>{
-     res.send({message: 'success join'});
+  }, (err, data)=> {
+    res.send({message: 'success join'});
+  })
+});
+
+router.post('/addComment/:id', (req, res)=> {
+  Activity.update({
+    _id: req.params.id
+  }, {
+    $addToSet: {comment: req.body.username + ":" + req.body.userComment}
+
+  }, (err, data)=> {
+    res.send({message: 'success !!!'});
   })
 });
 
@@ -54,10 +66,8 @@ router.post('/save', (req, res, next)=> {
     activityTime: req.body.activityTime,
     activityLocation: req.body.activityLocation,
     instruction: req.body.instruction,
-    comment: [{
-      clubName: 'jjj',
-      message: 'jjj'
-    }]
+    comment:[],
+    participator:[]
   }).save((err, todo) => {
     if (err) {
       return next(err);

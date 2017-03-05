@@ -15,24 +15,11 @@ export default {
       activityLocation: '西安邮电大学体育馆内',
       instruction: '切磋棋艺',
       comment: [
-        {
-          clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
-        },
-        {
-          clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
-        },
-        {
-          clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
-        },
-        {
-          clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
-        }
+        '奕林社:欢迎参加我社举办的棋艺比赛',
+        '奕林社:欢迎参加我社举办的棋艺比赛',
+        '奕林社:欢迎参加我社举办的棋艺比赛'
       ],
-      participator: ['myc123','apple','banana']
+      participator: ['myc123', 'apple', 'banana']
     },
     {
       creator: 'myc123',
@@ -41,12 +28,11 @@ export default {
       activityLocation: '西北大学操场',
       instruction: '每一次的跌倒不是失败，而是走向青春舞台的必经之路！来吧，只要你想轮滑，只要你喜欢轮滑，还在等什么？亮出追风的姿态，出发吧！',
       comment: [
-        {
-          clubName: '轮滑社',
-          message: '一起滑翔'
-        }
+        '奕林社:欢迎参加我社举办的棋艺比赛',
+        '奕林社:欢迎参加我社举办的棋艺比赛',
+        '奕林社:欢迎参加我社举办的棋艺比赛'
       ],
-      participator: ['myc123','apple','banana']
+      participator: ['myc123', 'apple', 'banana']
     },
     {
       creator: 'banana',
@@ -55,24 +41,11 @@ export default {
       activityLocation: '陕西师范大学南校区操场',
       instruction: '动漫真人秀（cosplay）表演',
       comment: [
-        {
-          clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
-        },
-        {
-          clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
-        },
-        {
-          clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
-        },
-        {
-          clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
-        }
+        '奕林社:欢迎参加我社举办的棋艺比赛',
+        '奕林社:欢迎参加我社举办的棋艺比赛',
+        '奕林社:欢迎参加我社举办的棋艺比赛'
       ],
-      participator: ['myc123','apple','banana']
+      participator: ['myc123', 'apple', 'banana']
     },
     {
       creator: 'banana',
@@ -81,24 +54,11 @@ export default {
       activityLocation: '江苏大学大学生活动中心',
       instruction: '展示中华戏曲魅力 ，弘扬民俗文化',
       comment: [
-        {
-          clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
-        },
-        {
-          clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
-        },
-        {
-          clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
-        },
-        {
-          clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
-        }
+        '奕林社:欢迎参加我社举办的棋艺比赛',
+        '奕林社:欢迎参加我社举办的棋艺比赛',
+        '奕林社:欢迎参加我社举办的棋艺比赛'
       ],
-      participator: ['myc123','apple']
+      participator: ['myc123', 'apple']
     },
     {
       creator: 'banana',
@@ -107,24 +67,11 @@ export default {
       activityLocation: '山东大学中心校区星咖啡餐厅',
       instruction: '异域风情面对面，缘定你我八分钟',
       comment: [
-        {
-          clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
-        },
-        {
-          clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
-        },
-        {
-          clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
-        },
-        {
-          clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
-        }
+        '奕林社:欢迎参加我社举办的棋艺比赛',
+        '奕林社:欢迎参加我社举办的棋艺比赛',
+        '奕林社:欢迎参加我社举办的棋艺比赛'
       ],
-      participator: ['apple','banana']
+      participator: ['apple', 'banana']
     },
     {
       creator: 'apple',
@@ -133,24 +80,11 @@ export default {
       activityLocation: '合肥工业大学翡翠湖校区5教208',
       instruction: '培养同学们的创新精神和动手能力，增强对学校的热爱和归属感',
       comment: [
-        {
-          clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
-        },
-        {
-          clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
-        },
-        {
-          clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
-        },
-        {
-          clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
-        }
+        '奕林社:欢迎参加我社举办的棋艺比赛',
+        '奕林社:欢迎参加我社举办的棋艺比赛',
+        '奕林社:欢迎参加我社举办的棋艺比赛'
       ],
-      participator: ['myc123','banana']
+      participator: ['myc123', 'banana']
     },
     {
       creator: 'apple',
@@ -159,24 +93,11 @@ export default {
       activityLocation: '西安政法大学A栋教学楼',
       instruction: '它不仅考验同学们的智力，更考验同学们在场的应变能力',
       comment: [
-        {
-          clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
-        },
-        {
-          clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
-        },
-        {
-          clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
-        },
-        {
-          clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
-        }
+        '奕林社:欢迎参加我社举办的棋艺比赛',
+        '奕林社:欢迎参加我社举办的棋艺比赛',
+        '奕林社:欢迎参加我社举办的棋艺比赛'
       ],
-      participator: ['myc123','apple','banana']
+      participator: ['myc123', 'apple', 'banana']
     },
     {
       creator: 'pear',
@@ -185,24 +106,11 @@ export default {
       activityLocation: '西安理工大学操场',
       instruction: '一触即发的多米诺，梦幻十足的3D投影',
       comment: [
-        {
-          clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
-        },
-        {
-          clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
-        },
-        {
-          clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
-        },
-        {
-          clubName: '奕林社',
-          message: '欢迎参加我社举办的棋艺比赛'
-        }
+        '奕林社:欢迎参加我社举办的棋艺比赛',
+        '奕林社:欢迎参加我社举办的棋艺比赛',
+        '奕林社:欢迎参加我社举办的棋艺比赛'
       ],
-      participator: ['myc123','apple','banana']
+      participator: ['myc123', 'apple', 'banana']
     }
   ],
   Community: [

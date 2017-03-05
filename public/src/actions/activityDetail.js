@@ -12,6 +12,7 @@ export const requestActivityDetail = (id)=> {
             throw err;
           }
           else {
+            console.log(res.body);
             dispatch(receiveActivityDetail(res.body));
           }
         });
