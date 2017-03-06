@@ -44,7 +44,7 @@ router.post('/join/:id', (req, res)=> {
     $addToSet: {participator: req.body.username}
 
   }, (err, data)=> {
-    res.send({message: 'success join'});
+    res.send({});
   })
 });
 
@@ -55,7 +55,7 @@ router.post('/addComment/:id', (req, res)=> {
     $addToSet: {comment: req.body.username + ":" + req.body.userComment}
 
   }, (err, data)=> {
-    res.send({message: 'success !!!'});
+    res.send({});
   })
 });
 

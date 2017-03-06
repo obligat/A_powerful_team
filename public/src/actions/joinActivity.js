@@ -2,9 +2,8 @@ import request from 'superagent';
 
 export const JOIN_ACTIVITY = 'JOIN_ACTIVITY';
 
-export const joinActivity = (data)=>({
-  type: JOIN_ACTIVITY,
-  data
+export const joinActivity = ()=>({
+  type: JOIN_ACTIVITY
 });
 
 export const reqJoinActivity = (id,username)=> {
@@ -14,7 +13,7 @@ export const reqJoinActivity = (id,username)=> {
         .send({username:username})
         .type('form')
         .end((err,res)=>{
-          dispatch(joinActivity(res.body.message));
+          dispatch(joinActivity());
         })
   }
 };

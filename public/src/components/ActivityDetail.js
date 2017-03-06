@@ -11,7 +11,6 @@ class ActivityDetail extends Component {
   componentDidMount() {
     let {id} = this.props.params;
     this.props.requestActivityDetail(id);
-    this.props.reqUserName();
   }
 
   handleClick() {
@@ -32,8 +31,7 @@ class ActivityDetail extends Component {
   }
 
   render() {
-    const {creator, activityName, activityTime, activityLocation, instruction, participator}=this.props.activityDetail;
-    let {comment=[]}=this.props.activityDetail;
+    const {creator, activityName, activityTime, activityLocation, instruction, participator,comment=[]}=this.props.activityDetail;
     return (
         <div className="container-fluid activityDetail">
           <div className="row">
@@ -85,7 +83,6 @@ class ActivityDetail extends Component {
                 <div className="col-md-3"></div>
                 <div className="col-md-6">
                   <button className="btn-default form-control" onClick={this.handleClick.bind(this)}>参加此活动</button>
-                  <p>{this.props.joinResult}</p>
                 </div>
                 <div className="col-md-3"></div>
               </div>
@@ -151,9 +148,6 @@ const mapDispatchToProps = (dispatch)=> {
   return {
     reqJoinActivity: (id, username)=> {
       dispatch(reqJoinActivity(id, username));
-    },
-    reqUserName: ()=> {
-      dispatch(reqUserName());
     },
     reqAddComment: (id, username, userComment)=> {
       dispatch(reqAddComment(id, username, userComment));
