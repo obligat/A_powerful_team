@@ -47,34 +47,26 @@ class Login extends Component {
     return (
         <div className="container">
 
-          <div className="form-group  container">
-            <label className="col-xs-1 col-form-label">Username</label>
-            <div className="col-xs-2">
-              <input className="form-control"
-                     id="username-input"
-                     type="text"
-                     placeholder="用户名"
-                     ref="username"
-                     onBlur={this.checkUserExist.bind(this)}
-              />
-            </div>
-            <span className="col-xs-6">{this.state.usernameError}</span>
+          <div className="input-group">
+            <label className="input-group-addon">用户名</label>
+            <input className="form-control"
+                   id="username-input"
+                   type="text"
+                   placeholder="用户名"
+                   ref="username"
+                   onBlur={this.checkUserExist.bind(this)}
+            />
+            <div>{this.state.usernameError}</div>
+            <label className="input-group-addon">密码</label>
+            <input className="form-control"
+                   id="password-input"
+                   type="password"
+                   placeholder="密码"
+                   ref="password"
+            />
+            <div>{this.state.passwordError}</div>
+
           </div>
-
-          <div className="form-group  container">
-            <label className="col-xs-1 col-form-label">Password</label>
-            <div className="col-xs-2">
-              <input className="form-control"
-                     id="password-input"
-                     type="password"
-                     placeholder="密码"
-                     ref="password"
-              />
-            </div>
-            <span className="col-xs-6">{this.state.passwordError}</span>
-          </div>
-
-
           <button id="cancelBulid"
                   type="button"
                   className="btn"
@@ -91,7 +83,32 @@ class Login extends Component {
             </button>
           </Link>
 
+          <div className="control-group warning">
+            <label className="control-label" htmlFor="inputWarning">用户名</label>
+            <div className="controls">
+              <input type="text" id="inputWarning"/>
+              <span className="help-inline">{this.state.usernameError}</span>
+            </div>
+          </div>
+
+          <form className="form-search">
+            <input type="text" className="input-medium search-query"/>
+              <button type="submit" className="btn">Search</button>
+          </form>
+
+          <form className="form-inline">
+            <input type="text" className="input-small" placeholder="Email"/>
+              <input type="password" className="" placeholder="Password"/>
+                <label className="checkbox">
+                  <input type="checkbox"/> Remember me
+                </label>
+            <button type="button" className="btn btn-outline-primary">Primary</button>
+            <button type="button" className="btn btn-warning-outline">Warning</button>
+
+          </form>
+
         </div>
+
     );
   }
 }
